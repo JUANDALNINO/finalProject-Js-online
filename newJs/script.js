@@ -505,9 +505,16 @@ function selectCar(listCars) {
 
 
 function carSaved(saveCar) {
-    arrayBooking.push(saveCar);
-    loadFinishCheck(arrayBooking);
-    reservationSave(arrayBooking);
+    if(arrayBooking.length >= 2) {
+        arrayBooking.pop();
+        arrayBooking.push(saveCar);
+        loadFinishCheck(arrayBooking);
+        reservationSave(arrayBooking);
+    } else {
+        arrayBooking.push(saveCar);
+        loadFinishCheck(arrayBooking);
+        reservationSave(arrayBooking);
+    }
 }
 
 
