@@ -1,7 +1,7 @@
 // Array
-let arrayCars = [];
-let arrayCities = [];
-let arrayCalendar = [];
+let arrayCars = data["cars"];
+let arrayCities = data["colombianCities"];
+let arrayCalendar = data["calendar"];
 let arrayBooking = [];
 
 
@@ -11,7 +11,7 @@ let arrayBooking = [];
 
 // Init App
 initApp();
-initAPIS();
+//initAPIS();
 
 
 
